@@ -58,7 +58,7 @@ function RadarSweep({ cx, cy, angle }) {
                           fill="rgba(0,255,178,0.18)"
                         />
                 <line x1={cx} y1={cy} x2={lx} y2={ly} stroke="rgba(0,255,178,0.7)" strokeWidth="0.3" />
-          </g>g>
+          </g>
         )
 }
 
