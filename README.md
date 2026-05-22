@@ -2,14 +2,12 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Sujith%20Srinivas%20G&fontSize=50&fontColor=fff&animation=twinkling&fontAlignY=35&desc=Software%20Engineer%20%7C%20React%20%7C%20Framer%20Motion&descAlignY=55&descSize=18" width="100%"/>
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=FF6B1A&center=true&vCenter=true&multiline=true&width=600&height=80&lines=⚡+React+18+%2B+Vite+%2B+Framer+Motion;🎨+Premium+UI+Components+from+Scratch;🚀+Industry-Standard+Portfolio)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=FF6B1A&center=true&vCenter=true&multiline=true&width=600&height=80&lines=React+18+%2B+Vite+%2B+Framer+Motion;Premium+UI+Components+from+Scratch;Industry-Standard+Portfolio)](https://git.io/typing-svg)
 
-<p align="center">
-  <a href="mailto:sujithsrinivasg8@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>a>
-    <img src="https://img.shields.io/badge/Location-Cincinnati%2C%20OH-00FFB2?style=for-the-badge&logo=googlemaps&logoColor=white" alt="Location"/>
-      <img src="https://img.shields.io/badge/Status-Open%20To%20Work-brightgreen?style=for-the-badge&logo=statuspal&logoColor=white" alt="Status"/>
-        <a href="https://sujithsrinivasg8-dev.github.io/sujith-portfolio/"><img src="https://img.shields.io/badge/Live%20Demo-FF6B1A?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Demo"/></a>a>
-</p>p>
+[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sujithsrinivasg8@gmail.com)
+[![Location](https://img.shields.io/badge/Cincinnati%2C%20OH-00FFB2?style=for-the-badge&logo=googlemaps&logoColor=black)](https://maps.google.com)
+[![Status](https://img.shields.io/badge/Open%20To%20Work-brightgreen?style=for-the-badge)](https://sujithsrinivasg8-dev.github.io/sujith-portfolio/)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-FF6B1A?style=for-the-badge&logo=vercel&logoColor=white)](https://sujithsrinivasg8-dev.github.io/sujith-portfolio/)
 
 </div>
 
@@ -136,7 +134,7 @@ src/
 │   ├── Preloader.jsx
 │   ├── Cursor.jsx
 │   │
-│   ├── TextVideoMask.jsx     # ↓ Framer component recreations
+│   ├── TextVideoMask.jsx     # Framer component recreations
 │   ├── GlassyButton.jsx
 │   ├── ShowcaseCard.jsx
 │   ├── CursorMaskReveal.jsx
@@ -189,8 +187,6 @@ src/
 > | Display | Instrument Serif *(italic option)* |
 > | Sans | Geist |
 > | Mono | JetBrains Mono |
->
-> Swap them in `index.html` and `src/styles/index.css`.
 >
 > ---
 >
@@ -260,8 +256,8 @@ https://sujithsrinivas.dev/  →  your real deployed URL
 
 | Asset | Purpose |
 |-------|---------|
-| `public/Sujith_Srinivas_G.pdf` | Downloadable résumé (Hero, Contact, Footer) |
-| `public/og-image.png` | 1200×630 social preview (LinkedIn / Twitter / Slack) |
+| `public/Sujith_Srinivas_G.pdf` | Downloadable resume (Hero, Contact, Footer) |
+| `public/og-image.png` | 1200x630 social preview (LinkedIn / Twitter / Slack) |
 | `public/favicon.svg` | Site icon |
 
 ---
@@ -280,7 +276,7 @@ https://sujithsrinivas.dev/  →  your real deployed URL
 | | |
 |---|---|
 | 👤 **Name** | Sujith Srinivas G |
-| 📧 **Email** | [sujithsrinivasg8@gmail.com](mailto:sujithsrinivasg8@gmail.com) |
+| 📧 **Email** | sujithsrinivasg8@gmail.com |
 | 📞 **Phone** | (513) 258-3186 |
 | 📍 **Location** | Cincinnati, OH, USA |
 
@@ -298,7 +294,7 @@ https://sujithsrinivas.dev/  →  your real deployed URL
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer&animation=twinkling" width="100%"/>
 
-**Made with ❤️ by [Sujith Srinivas G](mailto:sujithsrinivasg8@gmail.com)**
+**Made with ❤️ by Sujith Srinivas G**
 
 ![Profile Views](https://komarev.com/ghpvc/?username=sujithsrinivasg8-dev&color=FF6B1A&style=for-the-badge&label=Profile+Views)
 
