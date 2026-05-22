@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0A0A0A;
+  --ink: #0A0A0A;
+  --cream: #F5F1EA;
+  --amber: #FF6B1A;
+  --electric: #00FFB2;
+  --violet: #7C5CFC;
+  --muted: #6B6B6B;
+}
+
+* { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+html { scroll-behavior: smooth; }
+
+html, body {
+  background: var(--bg);
+  color: var(--cream);
+  font-family: 'Geist', system-ui, sans-serif;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+body {
+  cursor: none;
+}
+
+::selection { background: var(--amber); color: var(--ink); }
+
+/* Custom Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--ink); }
+::-webkit-scrollbar-thumb { background: var(--amber); border-radius: 3px; }
+
+/* Grain Overlay */
+.grain-overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9000;
+  opacity: 0.04;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  animation: grain 8s steps(10) infinite;
+}
+
+@keyframes grain {
+  0%, 100% { transform: translate(0,0); }
+  10% { transform: translate(-5%,-5%); }
+  30% { transform: translate(3%,-10%); }
+  50% { transform: translate(-10%,5%); }
+  70% { transform: translate(5%,8%); }
+  90% { transform: translate(-3%,3%); }
+}
+
+/* Display font utility */
+.font-display { font-family: 'Instrument Serif', serif; font-weight: 400; letter-spacing: -0.02em; }
+.font-mono { font-family: 'JetBrains Mono', monospace; }
+
+/* Marquee */
+.marquee { display: flex; overflow: hidden; gap: 4rem; }
+.marquee > * { animation: marquee 40s linear infinite; flex-shrink: 0; }
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+/* Custom cursor disable on inputs */
+input, textarea { cursor: text; }
+button, a { cursor: none; }
+
+/* Mask reveal helpers */
+.mask-text {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+/* Glass effect */
+.glass {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Noise btn texture */
+.noise-bg {
+  background-image:
+    radial-gradient(circle at 20% 30%, rgba(255,107,26,0.15) 0%, transparent 40%),
+    radial-gradient(circle at 80% 70%, rgba(124,92,252,0.12) 0%, transparent 50%);
+}
+
+/* 3D book perspective */
+.perspective-2000 { perspective: 2000px; }
+.preserve-3d { transform-style: preserve-3d; }
+.backface-hidden { backface-visibility: hidden; }
+
+/* Stamp / chip */
+.chip {
+  display: inline-flex; align-items: center; gap: 0.4rem;
+  padding: 0.3rem 0.7rem; border-radius: 100px;
+  border: 1px solid rgba(245,241,234,0.15);
+  font-family: 'JetBrains Mono', monospace; font-size: 0.65rem;
+  letter-spacing: 0.05em; text-transform: uppercase;
+  color: rgba(245,241,234,0.7);
+}
+.chip-amber { color: var(--amber); border-color: rgba(255,107,26,0.3); background: rgba(255,107,26,0.05); }
+.chip-electric { color: var(--electric); border-color: rgba(0,255,178,0.3); background: rgba(0,255,178,0.05); }
+.chip-violet { color: var(--violet); border-color: rgba(124,92,252,0.3); background: rgba(124,92,252,0.05); }
+
+/* Hide native scrollbar in carousel */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* Section dividers */
+.divider-amber {
+  background: linear-gradient(90deg, transparent, var(--amber), transparent);
+  height: 1px;
+}
+
+/* Hover lift */
+.hover-lift { transition: transform 0.3s cubic-bezier(0.4,0,0.2,1); }
+.hover-lift:hover { transform: translateY(-4px); }
+
+@media (max-width: 768px) {
+  body { cursor: auto; }
+  button, a { cursor: pointer; }
+}
