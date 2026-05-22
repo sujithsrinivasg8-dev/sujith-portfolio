@@ -1,36 +1,78 @@
-# Sujith Srinivas G — Portfolio
+<div align="center">
 
-An industry-standard React portfolio for **Sujith Srinivas G**, Software Engineer.
-Built with React 18 + Vite + Framer Motion. Recreates several premium Framer
-Marketplace components in pure React for full control and zero licensing dependency.
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Sujith%20Srinivas%20G&fontSize=50&fontColor=fff&animation=twinkling&fontAlignY=35&desc=Software%20Engineer%20%7C%20React%20%7C%20Framer%20Motion&descAlignY=55&descSize=18" width="100%"/>
+
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=FF6B1A&center=true&vCenter=true&multiline=true&width=600&height=80&lines=⚡+React+18+%2B+Vite+%2B+Framer+Motion;🎨+Premium+UI+Components+from+Scratch;🚀+Industry-Standard+Portfolio)](https://git.io/typing-svg)
+
+<p align="center">
+  <a href="mailto:sujithsrinivasg8@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>a>
+    <img src="https://img.shields.io/badge/Location-Cincinnati%2C%20OH-00FFB2?style=for-the-badge&logo=googlemaps&logoColor=white" alt="Location"/>
+      <img src="https://img.shields.io/badge/Status-Open%20To%20Work-brightgreen?style=for-the-badge&logo=statuspal&logoColor=white" alt="Status"/>
+        <a href="https://sujithsrinivasg8-dev.github.io/sujith-portfolio/"><img src="https://img.shields.io/badge/Live%20Demo-FF6B1A?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Demo"/></a>a>
+</p>p>
+
+</div>
+
+---
 
 ## ✨ Features
 
-- **TextVideoMask** — Hero text masking a gradient/video background
-- **GlassyButton** — Liquid glass buttons with mouse-tracking refraction
-- **ShowcaseCard** — 3D-tilting About card with parallax depth layers
-- **CursorMaskReveal** — Cursor "punches a hole" revealing hidden content
-- **Unfocused** — Hover any skill card; others blur into background
-- **RadiusOnScroll** — Container border-radius animates on scroll
-- **FFMap3D** — Stylized 3D-perspective world map showing career locations
-- **Book3D** — Flippable 3D book components for career chapters
-- **ExpandedMask** — Click-to-expand project cards with shared-layout animation
-- **Marquee** — Infinite horizontal scroll of the tech stack
-- **Custom cursor** + **grain overlay** + **smooth scroll** (Lenis)
-- **Preloader** with progress + phase messaging
-- Fully responsive · accessible · production-ready
+<div align="center">
 
-## 🛠 Tech Stack
+| Component | Description |
+|-----------|-------------|
+| 🎬 **TextVideoMask** | Hero text masking a gradient/video background |
+| 💎 **GlassyButton** | Liquid glass buttons with mouse-tracking refraction |
+| 🃏 **ShowcaseCard** | 3D-tilting About card with parallax depth layers |
+| 🔦 **CursorMaskReveal** | Cursor "punches a hole" revealing hidden content |
+| 🌫️ **Unfocused** | Hover any skill card; others blur into background |
+| 🌀 **RadiusOnScroll** | Container border-radius animates on scroll |
+| 🗺️ **FFMap3D** | Stylized 3D-perspective world map — career locations |
+| 📖 **Book3D** | Flippable 3D book components for career chapters |
+| 🚀 **ExpandedMask** | Click-to-expand project cards with shared-layout animation |
+| 🎡 **Marquee** | Infinite horizontal scroll of the tech stack |
+| 🖱️ **Custom Cursor** | Grain overlay + smooth scroll (Lenis) |
+| ⏳ **Preloader** | Progress + phase messaging |
 
-- **React 18** + **Vite 5**
-- **Framer Motion 11** (animations, shared layouts)
-- **Lenis** (smooth scrolling)
-- **Tailwind CSS** (utilities)
-- **Lucide React** (icons)
+</div>
+
+---
+
+## 🛠️ Tech Stack
+
+<div align="center">
+
+### Frontend
+![React](https://img.shields.io/badge/React%2018-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Vite](https://img.shields.io/badge/Vite%205-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+
+### Animation & Styling
+![Framer Motion](https://img.shields.io/badge/Framer%20Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Lenis](https://img.shields.io/badge/Lenis-Smooth%20Scroll-7C5CFC?style=for-the-badge)
+
+### Icons & Assets
+![Lucide](https://img.shields.io/badge/Lucide%20React-F56040?style=for-the-badge&logo=lucide&logoColor=white)
+
+### Deployment
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
+![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)
+![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-181717?style=for-the-badge&logo=github&logoColor=white)
+
+</div>
+
+---
 
 ## 📦 Quick Start
 
 ```bash
+# Clone the repository
+git clone https://github.com/sujithsrinivasg8-dev/sujith-portfolio.git
+cd sujith-portfolio
+
 # Install dependencies
 npm install
 
@@ -44,31 +86,36 @@ npm run build
 npm run preview
 ```
 
-The dev server runs at `http://localhost:5173`.
+> The dev server runs at **http://localhost:5173**
+>
+> ---
+>
+> ## 🚀 Deployment
+>
+> <div align="center">
 
-## 🚀 Deployment
+| Platform | Steps |
+|----------|-------|
+| ![Vercel](https://img.shields.io/badge/Vercel-000?logo=vercel&logoColor=white&style=flat-square) **Vercel** | Connect repo → Framework: Vite → Deploy |
+| ![Netlify](https://img.shields.io/badge/Netlify-00C7B7?logo=netlify&logoColor=white&style=flat-square) **Netlify** | Drag `dist/` into the Netlify dashboard |
+| ![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-181717?logo=github&logoColor=white&style=flat-square) **GitHub Pages** | Push `dist/` to `gh-pages` branch |
+| ![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?logo=cloudflare&logoColor=white&style=flat-square) **Cloudflare Pages** | Build cmd: `npm run build`, output: `dist` |
+| ![AWS](https://img.shields.io/badge/AWS-232F3E?logo=amazonaws&logoColor=white&style=flat-square) **AWS S3 + CloudFront** | Upload `dist/` to S3, point CloudFront at it |
 
-The `dist/` folder after `npm run build` is fully static and can be deployed to:
+</div>
 
-- **Vercel** — connect repo, framework "Vite", deploy
-- **Netlify** — drag `dist/` into the Netlify dashboard
-- **GitHub Pages** — push `dist/` to `gh-pages` branch
-- **Cloudflare Pages** — connect repo, build command `npm run build`, output `dist`
-- **AWS S3 + CloudFront** — upload `dist/` to S3, point CloudFront at it
-
-### Vercel one-click
+### One-Click Deploys
 
 ```bash
-npm install -g vercel
-vercel
-```
+# Vercel
+npm install -g vercel && vercel
 
-### Netlify drag-and-drop
-
-```bash
+# Netlify drag-and-drop
 npm run build
 # Drag the dist/ folder to https://app.netlify.com/drop
 ```
+
+---
 
 ## 📁 Project Structure
 
@@ -106,130 +153,79 @@ src/
 └── main.jsx
 ```
 
+---
+
 ## 🎨 Customization
 
-### Update personal info
-- **Hero copy** — `src/components/Hero.jsx` (PHRASES array)
-- **About text** — `src/components/About.jsx`
-- **Projects** — `src/components/Projects.jsx` (PROJECTS array)
-- **Experience** — `src/components/Experience.jsx` (EXPERIENCE array)
-- **Map locations** — `src/components/FFMap3D.jsx` (LOCATIONS array)
-- **Contact info** — `src/components/Contact.jsx`
+### Update Personal Info
 
-### Theme colors
-Edit CSS variables in `src/styles/index.css`:
+| File | What to Edit |
+|------|-------------|
+| `src/components/Hero.jsx` | `PHRASES` array — hero copy |
+| `src/components/About.jsx` | About section text |
+| `src/components/Projects.jsx` | `PROJECTS` array |
+| `src/components/Experience.jsx` | `EXPERIENCE` array |
+| `src/components/FFMap3D.jsx` | `LOCATIONS` array |
+| `src/components/Contact.jsx` | Contact info |
+
+### Theme Colors
 
 ```css
 :root {
-  --bg: #0A0A0A;        /* page background */
-  --cream: #F5F1EA;     /* primary text */
-  --amber: #FF6B1A;     /* primary accent */
+  --bg:       #0A0A0A;  /* page background  */
+  --cream:    #F5F1EA;  /* primary text     */
+  --amber:    #FF6B1A;  /* primary accent   */
   --electric: #00FFB2;  /* secondary accent */
-  --violet: #7C5CFC;    /* tertiary accent */
+  --violet:   #7C5CFC;  /* tertiary accent  */
 }
 ```
 
-Also mirror them in `tailwind.config.js` under `theme.extend.colors`.
-
-### Fonts
-- **Display**: Instrument Serif (italic option)
-- **Sans**: Geist
-- **Mono**: JetBrains Mono
-
-Swap them in `index.html` and `src/styles/index.css`.
-
-## 🧪 Component Usage Examples
-
-```jsx
-// TextVideoMask — text with gradient/video masking
-<TextVideoMask
-  text="HELLO"
-  videoSrc="/myvideo.mp4"  // optional
-/>
-
-// GlassyButton
-<GlassyButton href="#contact" variant="amber" size="lg">
-  Get in touch
-</GlassyButton>
-
-// ExpandedMask — click to expand project case study
-<ExpandedMask
-  index={0}
-  badge="FINTECH"
-  title="My project"
-  thumbBg="linear-gradient(...)"
-  thumbnail={<MyThumb />}
-  expandedContent={<DetailComponent />}
-/>
-
-// Unfocused — others blur on hover
-<Unfocused>
-  <Card1 />
-  <Card2 />
-  <Card3 />
-</Unfocused>
-```
-
-## 📝 License
-
-Personal portfolio code — feel free to use as reference but please don't
-publish a verbatim copy.
-
-## 📬 Contact
-
-**Sujith Srinivas G**
-- 📧 sujithsrinivasg8@gmail.com
-- 📞 (513) 258-3186
-- 📍 Cincinnati, OH, USA
-
----
-
-## 🔧 Git Deployment Quickstart
-
-### 1. Initialize and push to GitHub
-
-```bash
-cd sujith-portfolio
-git init
-git add .
-git commit -m "Initial commit: portfolio"
-git branch -M main
-git remote add origin https://github.com/<your-username>/<repo-name>.git
-git push -u origin main
-```
-
-### 2. Pick a host
-
-**Option A — GitHub Pages (zero config, included workflow)**
-1. Push to `main` (the included `.github/workflows/deploy.yml` runs automatically)
-2. In your repo: **Settings → Pages → Build and deployment → Source: GitHub Actions**
-3. Site goes live at `https://<your-username>.github.io/<repo-name>/`
-
-**Option B — Vercel**
-1. Go to vercel.com → New Project → import your repo
-2. Framework preset auto-detects **Vite** (config in `vercel.json`)
-3. Deploy — done. Auto-redeploys on every push.
-
-**Option C — Netlify**
-1. Go to netlify.com → Add new site → import your repo
-2. Build settings auto-detected from `netlify.toml`
-3. Deploy — done. Auto-redeploys on every push.
-
-### 3. Local development
-
-```bash
-npm install      # install dependencies
-npm run dev      # http://localhost:5173
-npm run build    # production build → dist/
-npm run preview  # preview the production build locally
-```
-
-## 📋 Requirements
-
-- **Node.js 20+** (pinned in `.nvmrc`)
-- **npm** (or pnpm/yarn — adjust lockfile accordingly)
-
-## 🗂 Deploy Config Files Included
+> Mirror them in `tailwind.config.js` under `theme.extend.colors`.
+>
+> ### Fonts
+>
+> | Role | Font |
+> |------|------|
+> | Display | Instrument Serif *(italic option)* |
+> | Sans | Geist |
+> | Mono | JetBrains Mono |
+>
+> Swap them in `index.html` and `src/styles/index.css`.
+>
+> ---
+>
+> ## 🧪 Component Usage
+>
+> ```jsx
+> // TextVideoMask — text with gradient/video masking
+> <TextVideoMask text="HELLO" videoSrc="/myvideo.mp4" />
+>
+> // GlassyButton
+> <GlassyButton href="#contact" variant="amber" size="lg">
+>   Get in touch
+> </GlassyButton>
+>
+> // ExpandedMask — click to expand project case study
+> <ExpandedMask
+>   index={0}
+>   badge="FINTECH"
+>   title="My project"
+>   thumbBg="linear-gradient(...)"
+>   thumbnail={<MyThumb />}
+>   expandedContent={<DetailComponent />}
+> />
+>
+> // Unfocused — others blur on hover
+> <Unfocused>
+>   <Card1 /> <Card2 /> <Card3 />
+> </Unfocused>
+> ```
+>
+> ---
+>
+> ## 🗂️ Deploy Config Files
+>
+> <div align="center">
 
 | File | Purpose |
 |------|---------|
@@ -239,26 +235,71 @@ npm run preview  # preview the production build locally
 | `.nvmrc` | Node version pin (20) |
 | `.gitignore` | Excludes node_modules, dist, env files |
 
+</div>
+
 ---
 
-## ⚠️ Before you deploy — replace placeholders
+## ⚠️ Before You Deploy
 
-The site ships with **placeholder GitHub/LinkedIn URLs** you must update with your real profiles. Search and replace across the project:
+Replace these placeholders everywhere:
 
 ```bash
-# Replace these strings everywhere (Hero, Contact, Footer, index.html):
-your-username   →  your real GitHub username
-your-handle     →  your real LinkedIn handle
+your-username  →  your real GitHub username
+your-handle    →  your real LinkedIn handle
 ```
 
-Files containing them: `src/components/Contact.jsx`, `src/components/Footer.jsx`, `index.html`.
+Files: `src/components/Contact.jsx`, `src/components/Footer.jsx`, `index.html`
 
-Also update in `index.html` (used for SEO + link previews):
-- `https://sujithsrinivas.dev/` → your real deployed URL (canonical + og:url + og:image)
+Also update in `index.html`:
 
-### Assets included
-- `public/Sujith_Srinivas_G.pdf` — your résumé (downloadable from Hero, Contact, Footer)
-- `public/og-image.png` — 1200×630 social preview image (LinkedIn/Twitter/Slack unfurls)
-- `public/favicon.svg` — site icon
+```
+https://sujithsrinivas.dev/  →  your real deployed URL
+```
 
-To regenerate the résumé link with a newer PDF, just replace `public/Sujith_Srinivas_G.pdf` (keep the same filename, or update the `href` in the three components).
+### Public Assets
+
+| Asset | Purpose |
+|-------|---------|
+| `public/Sujith_Srinivas_G.pdf` | Downloadable résumé (Hero, Contact, Footer) |
+| `public/og-image.png` | 1200×630 social preview (LinkedIn / Twitter / Slack) |
+| `public/favicon.svg` | Site icon |
+
+---
+
+## 📋 Requirements
+
+![Node](https://img.shields.io/badge/Node.js-20%2B-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![npm](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white)
+
+---
+
+## 📬 Contact
+
+<div align="center">
+
+| | |
+|---|---|
+| 👤 **Name** | Sujith Srinivas G |
+| 📧 **Email** | [sujithsrinivasg8@gmail.com](mailto:sujithsrinivasg8@gmail.com) |
+| 📞 **Phone** | (513) 258-3186 |
+| 📍 **Location** | Cincinnati, OH, USA |
+
+</div>
+
+---
+
+## 📝 License
+
+> Personal portfolio code — feel free to use as **reference** but please don't publish a verbatim copy.
+>
+> ---
+>
+> <div align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer&animation=twinkling" width="100%"/>
+
+**Made with ❤️ by [Sujith Srinivas G](mailto:sujithsrinivasg8@gmail.com)**
+
+![Profile Views](https://komarev.com/ghpvc/?username=sujithsrinivasg8-dev&color=FF6B1A&style=for-the-badge&label=Profile+Views)
+
+</div>
