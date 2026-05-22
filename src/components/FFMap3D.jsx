@@ -168,13 +168,13 @@ export default function FFMap3D() {
                                                                                                     />
                                                                                         <span style={{ fontFamily: 'JetBrains Mono, monospace', fontSize: 9, color: 'rgba(0,255,178,0.7)', letterSpacing: '0.25em', textTransform: 'uppercase' }}>
                                                                                                     JOURNEY · 6 YEARS
-                                                                                        </span>span>
-                                                                              </div>div>
+                                                                                        </span>
+                                                                              </div>
                                                                               <div style={{ position: 'absolute', top: 12, right: 16, zIndex: 20 }}>
                                                                                         <span style={{ fontFamily: 'JetBrains Mono, monospace', fontSize: 9, color: 'rgba(0,255,178,0.4)', letterSpacing: '0.2em', textTransform: 'uppercase' }}>
                                                                                                     USA ◄ INDIA
-                                                                                        </span>span>
-                                                                              </div>div>
+                                                                                        </span>
+                                                                              </div>
                                                                       
                                                                         {/* Horizontal scan line */}
                                                                               <div style={{
@@ -193,20 +193,20 @@ export default function FFMap3D() {
                                                                                                     <radialGradient id="bgGlow" cx="50%" cy="50%" r="50%">
                                                                                                                   <stop offset="0%" stopColor="rgba(0,255,178,0.04)" />
                                                                                                                   <stop offset="100%" stopColor="rgba(0,0,0,0)" />
-                                                                                                      </radialGradient>radialGradient>
+                                                                                                      </radialGradient>
                                                                                                     <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
                                                                                                                   <feGaussianBlur stdDeviation="0.6" result="blur" />
-                                                                                                                  <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>feMerge>
-                                                                                                      </filter>filter>
+                                                                                                                  <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
+                                                                                                      </filter>
                                                                                                     <filter id="strongGlow" x="-100%" y="-100%" width="300%" height="300%">
                                                                                                                   <feGaussianBlur stdDeviation="1.2" result="blur" />
-                                                                                                                  <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>feMerge>
-                                                                                                      </filter>filter>
+                                                                                                                  <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
+                                                                                                      </filter>
                                                                                                     <radialGradient id="radarGrad" cx="50%" cy="50%" r="50%">
                                                                                                                   <stop offset="0%" stopColor="rgba(0,255,178,0.12)" />
                                                                                                                   <stop offset="100%" stopColor="rgba(0,255,178,0)" />
-                                                                                                      </radialGradient>radialGradient>
-                                                                                        </defs>defs>
+                                                                                                      </radialGradient>
+                                                                                        </defs>
                                                                               
                                                                                         <rect x="0" y="0" width="100" height="80" fill="url(#bgGlow)" />
                                                                               
@@ -223,7 +223,7 @@ export default function FFMap3D() {
                                                                                 {/* Continents */}
                                                                                         <g fill="rgba(245,241,234,0.06)" stroke="rgba(0,255,178,0.2)" strokeWidth="0.25" filter="url(#glow)">
                                                                                           {Object.values(CONTINENTS).map((d, i) => <path key={i} d={d} />)}
-                                                                                        </g>g>
+                                                                                        </g>
                                                                               
                                                                                 {/* Radar around active location */}
                                                                                 {activeLoc && (
@@ -236,7 +236,7 @@ export default function FFMap3D() {
                                                                                                                     <RadarRing cx={activeLoc.x} cy={activeLoc.y} delay={0} duration={2.5} />
                                                                                                                     <RadarRing cx={activeLoc.x} cy={activeLoc.y} delay={0.8} duration={2.5} />
                                                                                                                     <RadarRing cx={activeLoc.x} cy={activeLoc.y} delay={1.6} duration={2.5} />
-                                                                                                        </g>g>
+                                                                                                        </g>
                                                                                         )}
                                                                               
                                                                                 {/* Connection arcs */}
@@ -248,7 +248,7 @@ export default function FFMap3D() {
                                                                                                                                                                 <g key={i}>
                                                                                                                                                                                 <path d={arcPath} stroke={isActive ? 'rgba(255,107,26,0.35)' : 'rgba(255,107,26,0.1)'} strokeWidth={isActive ? '0.6' : '0.3'} fill="none" filter="url(#glow)" />
                                                                                                                                                                                 <path d={arcPath} stroke={isActive ? 'rgba(255,107,26,0.9)' : 'rgba(255,107,26,0.3)'} strokeWidth="0.2" fill="none" strokeDasharray="0.8 0.8" />
-                                                                                                                                                                  </g>g>
+                                                                                                                                                                  </g>
                                                                                                                                                               )
                                                                                           })}
                                                                               
@@ -263,7 +263,7 @@ export default function FFMap3D() {
                                                                                                                                                                                             <g key={packet.id} filter="url(#strongGlow)">
                                                                                                                                                                                                             <circle cx={pt.x} cy={pt.y} r="0.8" fill="#FF6B1A" opacity={1 - t * 0.3} />
                                                                                                                                                                                                             <circle cx={pt.x} cy={pt.y} r="0.35" fill="#FFF" opacity={0.9} />
-                                                                                                                                                                                                          </g>g>
+                                                                                                                                                                                                          </g>
                                                                                                                                                                                           )
                                                                                           })}
                                                                               
@@ -288,14 +288,14 @@ export default function FFMap3D() {
                                                                                                                                                                   {(isActive || isHover) && (
                                                                                                                                                                                                     <g>
                                                                                                                                                                                                                         <rect x="2.8" y="-4.2" width={loc.name.length * 1.28} height="3.8" rx="0.4" fill="rgba(5,13,20,0.88)" stroke="rgba(0,255,178,0.4)" strokeWidth="0.15" />
-                                                                                                                                                                                                                        <text x="3.4" y="-1.8" fontSize="1.55" fill="#F5F1EA" fontFamily="JetBrains Mono, monospace" fontWeight="bold">{loc.name}</text>text>
-                                                                                                                                                                                                                        <text x="3.4" y="-0.4" fontSize="1.1" fill="rgba(0,255,178,0.75)" fontFamily="JetBrains Mono, monospace">{loc.sub}</text>text>
-                                                                                                                                                                                                                      </g>g>
+                                                                                                                                                                                                                        <text x="3.4" y="-1.8" fontSize="1.55" fill="#F5F1EA" fontFamily="JetBrains Mono, monospace" fontWeight="bold">{loc.name}</text>
+                                                                                                                                                                                                                        <text x="3.4" y="-0.4" fontSize="1.1" fill="rgba(0,255,178,0.75)" fontFamily="JetBrains Mono, monospace">{loc.sub}</text>
+                                                                                                                                                                                                                      </g>
                                                                                                                                                                                 )}
-                                                                                                                                                                  </g>g>
+                                                                                                                                                                  </g>
                                                                                                                                                               )
                                                                                 })}
-                                                                              </svg>svg>
+                                                                              </svg>
                                                                       
                                                                         {/* Info panel */}
                                                                               <AnimatePresence mode="wait">
@@ -315,18 +315,18 @@ export default function FFMap3D() {
                                                                                                     >
                                                                                                     <div style={{ fontFamily: 'JetBrains Mono, monospace', fontSize: 9, color: 'rgba(0,255,178,0.5)', letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: 3 }}>
                                                                                                                   CURRENTLY VIEWING
-                                                                                                      </div>div>
+                                                                                                      </div>
                                                                                                     <div style={{ fontFamily: 'Instrument Serif, serif', fontSize: 18, color: '#F5F1EA', lineHeight: 1.2 }}>
                                                                                                       {displayLoc ? displayLoc.name : ''}
-                                                                                                      </div>div>
+                                                                                                      </div>
                                                                                                     <div style={{ fontFamily: 'JetBrains Mono, monospace', fontSize: 9, color: '#FF6B1A', marginTop: 2, letterSpacing: '0.1em' }}>
                                                                                                       {displayLoc ? displayLoc.sub : ''}
-                                                                                                      </div>div>
+                                                                                                      </div>
                                                                                                     <div style={{ fontFamily: 'JetBrains Mono, monospace', fontSize: 8, color: 'rgba(245,241,234,0.3)', marginTop: 4 }}>
                                                                                                       {displayLoc ? (displayLoc.lat + 'N, ' + Math.abs(displayLoc.lng) + (displayLoc.lng < 0 ? 'W' : 'E')) : ''}
-                                                                                                      </div>div>
-                                                                                        </motion.div>motion.div>
-                                                                              </AnimatePresence>AnimatePresence>
+                                                                                                      </div>
+                                                                                        </motion.div>
+                                                                              </AnimatePresence>
                                                                       
                                                                         {/* Live signal */}
                                                                               <div style={{ position: 'absolute', bottom: 16, left: 16, zIndex: 20, display: 'flex', alignItems: 'center', gap: 6 }}>
@@ -337,9 +337,9 @@ export default function FFMap3D() {
                                                                                                     />
                                                                                         <span style={{ fontFamily: 'JetBrains Mono, monospace', fontSize: 8, color: 'rgba(0,255,178,0.5)', letterSpacing: '0.2em' }}>
                                                                                                     LIVE SIGNAL
-                                                                                        </span>span>
-                                                                              </div>div>
-                                                                      </div>div>
+                                                                                        </span>
+                                                                              </div>
+                                                                      </div>
                                                                   
                                                                     {/* Location pills */}
                                                                         <div style={{ marginTop: 12, display: 'flex', gap: 6, flexWrap: 'wrap' }}>
@@ -360,11 +360,11 @@ export default function FFMap3D() {
                                                                                                             color: activeId === loc.id ? (loc.current ? '#FF6B1A' : '#00FFB2') : 'rgba(245,241,234,0.45)',
                                                                                               }}
                                                                                           >
-                                                                                          <span style={{ marginRight: 5, fontSize: 9, opacity: 0.6 }}>{loc.current ? 'PRESENT' : 'PAST'}</span>span>
+                                                                                          <span style={{ marginRight: 5, fontSize: 9, opacity: 0.6 }}>{loc.current ? 'PRESENT' : 'PAST'}</span>
                                                                                 {loc.name.split(',')[0]}
-                                                                              </motion.button>motion.button>
+                                                                              </motion.button>
                                                                             ))}
-                                                                        </div>div>
-                                                                  </div>div>
+                                                                        </div>
+                                                                  </div>
                                                                 )
-                                                              }</g>
+                                                              }
