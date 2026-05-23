@@ -1,4 +1,5 @@
 import ExpandedMask from './ExpandedMask'
+import ReelCarousel from './ReelCarousel'
 
 /**
  * Industry-standard project cards based on Sujith's actual experience.
@@ -315,6 +316,22 @@ export default function Projects() {
             engagements across fintech, e-commerce, and platform work.
           </p>
         </div>
+      </div>
+
+      {/* Project Reel Carousel */}
+      <div className="max-w-7xl mx-auto mb-12 overflow-hidden">
+        <ReelCarousel
+          speed={0.6}
+          gap={16}
+          cardWidth={260}
+          cardHeight={160}
+          items={PROJECTS.map((p) => ({
+            title: p.title,
+            tag: p.badge,
+            subtitle: p.stack ? p.stack.slice(0, 3).join(' · ') : '',
+            bg: p.thumbBg,
+          }))}
+        />
       </div>
 
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-6">
