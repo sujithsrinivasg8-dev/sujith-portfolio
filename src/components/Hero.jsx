@@ -1,8 +1,9 @@
 import { useEffect, useState, useRef } from 'react'
-import { motion, useScroll, useTransform } from 'framer-motion'
+import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion'
 import { ArrowDown } from 'lucide-react'
 import TextVideoMask from './TextVideoMask'
 import GlassyButton from './GlassyButton'
+import ShowcaseCard from './ShowcaseCard'
 
 const PHRASES = [
   'Building event-driven systems at 15K TPS',
@@ -68,7 +69,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6 }}
-          className="flex items-center gap-3 mb-8"
+          className="flex items-center gap-3 mb-6"
         >
           <div className="w-12 h-px bg-amber" />
           <span className="font-mono text-[11px] uppercase tracking-[0.3em] text-amber">
@@ -77,94 +78,102 @@ export default function Hero() {
           <div className="w-12 h-px bg-amber" />
         </motion.div>
 
-        {/* Big masked text */}
+        {/* Name + Profile Picture Row */}
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.4, duration: 1 }}
-          className="w-full max-w-6xl"
+          className="w-full max-w-5xl flex flex-col md:flex-row items-center justify-center gap-6 md:gap-10"
         >
-          <TextVideoMask text="SUJITH" />
-          <TextVideoMask text="SRINIVAS" />
+          {/* Big masked text — compact & smart */}
+          <div className="flex-1 text-center md:text-left">
+            <TextVideoMask text="SUJITH" style={{ fontSize: 'clamp(3rem, 8vw, 6.5rem)', lineHeight: 1 }} />
+            <TextVideoMask text="SRINIVAS" style={{ fontSize: 'clamp(2.5rem, 7vw, 5.5rem)', lineHeight: 1 }} />
+          </div>
+
+          {/* Profile picture via ShowcaseCard */}
+          <motion.div
+            initial={{ opacity: 0, x: 40 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.8, duration: 0.8 }}
+            className="flex-shrink-0"
+          >
+            <ShowcaseCard
+              image="/og-image.png"
+              name="Sujith Srinivas G"
+              role="Software Engineer"
+              style={{ width: 180, height: 220 }}
+            />
+          </motion.div>
         </motion.div>
 
-        {/* Rotating phrase */}
-        <div className="mt-12 h-8 overflow-hidden">
-          {PHRASES.map((p, i) => (
-            <motion.div
-              key={i}
-              initial={false}
-              animate={{
-                y: phraseIdx === i ? 0 : phraseIdx > i ? -32 : 32,
-                opacity: phraseIdx === i ? 1 : 0,
-              }}
-              transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-              className="font-mono text-sm md:text-base text-cream/80 absolute"
-            >
-              <span className="text-amber mr-2">▸</span>
-              {p}
-            </motion.div>
-          ))}
+        {/* Rotating subtitle — centered */}
+        <div className="mt-10 h-8 overflow-visible w-full flex items-center justify-center">
+          <div className="relative h-8 w-full flex items-center justify-center">
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={phraseIdx}
+                initial={{ y: 20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                exit={{ y: -20, opacity: 0 }}
+                transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
+                className="font-mono text-sm md:text-base text-cream/80 flex items-center gap-2 text-center"
+              >
+                <span className="text-amber">&#9658;</span>
+                {PHRASES[phraseIdx]}
+              </motion.div>
+            </AnimatePresence>
+          </div>
         </div>
 
-        {/* CTA buttons */}
+        {/* CTA buttons — clearly visible */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.2 }}
-          className="flex flex-wrap gap-4 mt-16"
+          className="flex flex-wrap gap-4 mt-14 justify-center"
         >
           <GlassyButton href="#projects" variant="amber" size="lg">
-            View My Work
+            View My Work &#8593;
           </GlassyButton>
           <GlassyButton href="#contact" variant="default" size="lg">
-            Let's Talk
+            Let&apos;s Talk &#8593;
           </GlassyButton>
-          <a
-            href="/Sujith_Srinivas_G.pdf"
-            download
-            className="group inline-flex items-center gap-3 px-9 py-4 rounded-full border border-electric/30 bg-electric/5 text-electric font-mono uppercase tracking-wider text-base hover:bg-electric/10 transition"
-            style={{ backdropFilter: 'blur(20px)' }}
-          >
-            Résumé
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="group-hover:translate-y-0.5 transition">
-              <path d="M12 3 L12 16 M6 11 L12 17 L18 11 M5 21 L19 21" />
-            </svg>
-          </a>
+          <GlassyButton href="/Sujith_Srinivas_G.pdf" variant="electric" size="lg">
+            R&eacute;sum&eacute; &#8595;
+          </GlassyButton>
         </motion.div>
 
-        {/* Stats strip */}
+        {/* Stats row */}
         <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.4 }}
-          className="absolute bottom-12 left-0 right-0 px-6 md:px-24"
+          className="mt-16 flex flex-wrap gap-8 justify-center"
         >
-          <div className="flex flex-wrap items-center justify-between gap-6 max-w-6xl mx-auto pt-8 border-t border-cream/10">
-            {[
-              { num: '6+', label: 'Years building backend systems' },
-              { num: '15K', label: 'Transactions/sec sustained' },
-              { num: '50M+', label: 'Users served (Flipkart)' },
-              { num: '99.9%', label: 'System availability' },
-            ].map((s, i) => (
-              <div key={i} className="flex-1 min-w-[140px]">
-                <div className="font-display text-3xl md:text-4xl text-cream">{s.num}</div>
-                <div className="font-mono text-[10px] uppercase tracking-wider text-cream/40 mt-1">
-                  {s.label}
-                </div>
+          {[
+            { num: '6+', label: 'Years building backend systems' },
+            { num: '15K', label: 'Transactions/sec sustained' },
+            { num: '50M+', label: 'Users served (Flipkart)' },
+            { num: '99.9%', label: 'System availability' },
+          ].map((s, i) => (
+            <div key={i} className="flex-1 min-w-[140px] text-center">
+              <div className="font-display text-3xl md:text-4xl text-cream">{s.num}</div>
+              <div className="font-mono text-[10px] uppercase tracking-wider text-cream/40 mt-1">
+                {s.label}
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </motion.div>
+      </motion.div>
 
-        {/* Scroll indicator */}
-        <motion.div
-          animate={{ y: [0, 8, 0] }}
-          transition={{ duration: 1.6, repeat: Infinity }}
-          className="absolute bottom-2 left-1/2 -translate-x-1/2"
-        >
-          <ArrowDown size={16} className="text-amber" />
-        </motion.div>
+      {/* Scroll indicator */}
+      <motion.div
+        animate={{ y: [0, 8, 0] }}
+        transition={{ duration: 1.6, repeat: Infinity }}
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20"
+      >
+        <ArrowDown size={16} className="text-amber" />
       </motion.div>
     </section>
   )
