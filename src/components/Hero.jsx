@@ -119,7 +119,7 @@ export default function Hero() {
                 transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
                 className="font-mono text-sm md:text-base text-cream/80 flex items-center gap-2 text-center"
               >
-                <span className="text-amber">&#9658;</span>
+                <span className="text-amber">▸</span>
                 {PHRASES[phraseIdx]}
               </motion.div>
             </AnimatePresence>
@@ -139,7 +139,7 @@ export default function Hero() {
           <GlassyButton href="#contact" variant="default" size="lg">
             Let&apos;s Talk &#8593;
           </GlassyButton>
-          <GlassyButton href="/Sujith_Srinivas_G.pdf" variant="electric" size="lg">
+          <GlassyButton href="/Sujith_Srinivas_G.pdf" variant="electric" size="lg" download>
             R&eacute;sum&eacute; &#8595;
           </GlassyButton>
         </motion.div>
