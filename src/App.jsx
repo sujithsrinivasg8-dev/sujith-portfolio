@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import useSmoothScroll from './hooks/useSmoothScroll'
+import useHashRoute from './hooks/useHashRoute'
 import Preloader from './components/Preloader'
 import Cursor from './components/Cursor'
 import Navigation from './components/Navigation'
@@ -13,9 +14,28 @@ import Projects from './components/Projects'
 import Experience from './components/Experience'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import AIPage from './components/AIPage'
+
+// The existing homepage — unchanged, just wrapped in its own component.
+function HomePage() {
+  return (
+    <main>
+      <Hero />
+      <Marquee />
+      <About />
+      <Journey />
+      <Skills />
+      <Architecture />
+      <Projects />
+      <Experience />
+      <Contact />
+    </main>
+  )
+}
 
 function App() {
   const [mobile, setMobile] = useState(false)
+  const { route } = useHashRoute()
   useSmoothScroll()
 
   useEffect(() => {
@@ -33,17 +53,7 @@ function App() {
 
       <Navigation />
 
-      <main>
-        <Hero />
-        <Marquee />
-        <About />
-        <Journey />
-        <Skills />
-        <Architecture />
-        <Projects />
-        <Experience />
-        <Contact />
-      </main>
+      {route === 'ai' ? <AIPage /> : <HomePage />}
 
       <Footer />
     </>
