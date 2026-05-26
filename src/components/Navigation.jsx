@@ -3,13 +3,14 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
 
 const links = [
-  { href: '#home', label: 'Home', no: '01' },
-  { href: '#about', label: 'About', no: '02' },
-  { href: '#journey', label: 'Journey', no: '03' },
-  { href: '#skills', label: 'Capabilities', no: '04' },
-  { href: '#projects', label: 'Projects', no: '05' },
-  { href: '#experience', label: 'Experience', no: '06' },
-  { href: '#contact', label: 'Contact', no: '07' },
+  { href: '#/', label: 'Home', no: '01' },
+  { href: '#/#about', label: 'About', no: '02' },
+  { href: '#/#journey', label: 'Journey', no: '03' },
+  { href: '#/#skills', label: 'Capabilities', no: '04' },
+  { href: '#/#projects', label: 'Projects', no: '05' },
+  { href: '#/ai', label: 'AI / ML', no: '06', highlight: true },
+  { href: '#/#experience', label: 'Experience', no: '07' },
+  { href: '#/#contact', label: 'Contact', no: '08' },
 ]
 
 export default function Navigation() {
@@ -49,7 +50,7 @@ export default function Navigation() {
       >
         <div className="max-w-[1600px] mx-auto px-6 md:px-12 py-5 flex items-center justify-between">
           {/* Logo */}
-          <a href="#home" className="group">
+          <a href="#/" className="group">
             <div className="flex items-center gap-3">
               <div className="relative w-10 h-10">
                 <motion.div
@@ -83,10 +84,11 @@ export default function Navigation() {
               <a
                 key={l.href}
                 href={l.href}
-                className="group relative font-mono text-[11px] uppercase tracking-[0.15em] text-cream/60 hover:text-cream transition"
+                className={`group relative font-mono text-[11px] uppercase tracking-[0.15em] transition ${l.highlight ? 'text-amber hover:text-cream' : 'text-cream/60 hover:text-cream'}`}
               >
-                <span className="text-amber/50 mr-1">{l.no}</span>
+                <span className={l.highlight ? 'text-amber mr-1' : 'text-amber/50 mr-1'}>{l.no}</span>
                 {l.label}
+                {l.highlight && <span className="ml-1 inline-block w-1.5 h-1.5 rounded-full bg-amber align-middle" style={{ animation: 'pulse 2s infinite' }} />}
                 <span className="absolute -bottom-1 left-0 w-0 h-px bg-amber group-hover:w-full transition-all duration-300" />
               </a>
             ))}
@@ -101,7 +103,7 @@ export default function Navigation() {
               <div className="font-mono text-xs text-electric tabular-nums">{time}</div>
             </div>
             <a
-              href="#contact"
+              href="#/#contact"
               className="hidden md:flex chip chip-amber"
             >
               <span className="w-1.5 h-1.5 bg-amber rounded-full animate-pulse" />
