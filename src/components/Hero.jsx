@@ -3,8 +3,12 @@ import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion'
 import { ArrowDown } from 'lucide-react'
 import TextVideoMask from './TextVideoMask'
 import GlassyButton from './GlassyButton'
-import ShowcaseCard from './ShowcaseCard'
+import HeroTerminal from './HeroTerminal'
 import CountUp from './CountUp'
+
+// On-brand name fill: amber → cream → electric (stays in palette instead of
+// drifting into off-brand pink/purple like the default gradient did).
+const NAME_GRADIENT = 'linear-gradient(110deg, #FF6B1A 0%, #F5F1EA 48%, #00FFB2 100%)'
 
 const PHRASES = [
   'Building event-driven systems at 15K TPS',
@@ -79,33 +83,30 @@ export default function Hero() {
           <div className="w-12 h-px bg-amber" />
         </motion.div>
 
-        {/* Name + Profile Picture Row */}
+        {/* Name + Identity terminal row */}
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.4, duration: 1 }}
-          className="w-full max-w-5xl flex flex-col md:flex-row items-center justify-center gap-6 md:gap-10"
+          className="w-full max-w-6xl grid md:grid-cols-2 items-center gap-8 md:gap-14"
         >
-          {/* Big masked text — compact & smart */}
-          <div className="flex-1 text-center md:text-left">
-            <TextVideoMask text="SUJITH" style={{ fontSize: 'clamp(3rem, 8vw, 6.5rem)', lineHeight: 1 }} />
-            <TextVideoMask text="SRINIVAS" style={{ fontSize: 'clamp(2.5rem, 7vw, 5.5rem)', lineHeight: 1 }} />
+          {/* Big masked text */}
+          <div className="text-center md:text-left">
+            <TextVideoMask text="SUJITH" fallbackGradient={NAME_GRADIENT} style={{ fontSize: 'clamp(3rem, 8vw, 7rem)', lineHeight: 1 }} />
+            <TextVideoMask text="SRINIVAS" fallbackGradient={NAME_GRADIENT} style={{ fontSize: 'clamp(2.5rem, 7vw, 6rem)', lineHeight: 1 }} />
+
+            {/* Value proposition */}
+            <p className="mt-6 text-cream/70 text-base md:text-lg leading-relaxed max-w-md mx-auto md:mx-0">
+              I build <span className="text-cream">high-throughput, low-latency</span> backend
+              platforms — <span className="text-amber">15K transactions/sec</span> at
+              <span className="text-electric"> sub-100ms</span>.
+            </p>
           </div>
 
-          {/* Profile picture via ShowcaseCard */}
-          <motion.div
-            initial={{ opacity: 0, x: 40 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.8, duration: 0.8 }}
-            className="flex-shrink-0"
-          >
-            <ShowcaseCard
-              image="/og-image.png"
-              name="Sujith Srinivas G"
-              role="Software Engineer"
-              style={{ width: 180, height: 220 }}
-            />
-          </motion.div>
+          {/* Identity terminal */}
+          <div className="flex justify-center md:justify-end">
+            <HeroTerminal />
+          </div>
         </motion.div>
 
         {/* Rotating subtitle — centered */}
