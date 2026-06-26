@@ -3,7 +3,7 @@ import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion'
 import { ArrowDown } from 'lucide-react'
 import TextVideoMask from './TextVideoMask'
 import GlassyButton from './GlassyButton'
-import HeroTerminal from './HeroTerminal'
+import HeroGame from './HeroGame'
 import CountUp from './CountUp'
 
 // On-brand name fill: amber → cream → electric (stays in palette instead of
@@ -103,9 +103,9 @@ export default function Hero() {
             </p>
           </div>
 
-          {/* Identity terminal */}
+          {/* Interactive mini game */}
           <div className="flex justify-center md:justify-end">
-            <HeroTerminal />
+            <HeroGame />
           </div>
         </motion.div>
 
