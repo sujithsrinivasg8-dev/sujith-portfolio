@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { Phone, Mail, MapPin, Linkedin, Github, ArrowRight } from 'lucide-react'
+import { Phone, Mail, MapPin, Github, ArrowRight } from 'lucide-react'
 import GlassyButton from './GlassyButton'
 
 export default function Contact() {
@@ -89,10 +89,6 @@ export default function Contact() {
                     <Github size={14} className="text-amber" />
                     <span className="group-hover:underline">github.com/sujithsrinivasg8-dev</span>
                   </a>
-                  <a href="https://linkedin.com/in/your-handle" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-cream/80 hover:text-amber transition group">
-                    <Linkedin size={14} className="text-amber" />
-                    <span className="group-hover:underline">linkedin.com/in/your-handle</span>
-                  </a>
                 </div>
 
                 <div className="text-cream/40 mt-4">$ <span className="animate-pulse">▌</span></div>
@@ -109,9 +105,6 @@ export default function Contact() {
               </GlassyButton>
               <GlassyButton href="https://github.com/sujithsrinivasg8-dev" variant="default" size="sm">
                 GitHub
-              </GlassyButton>
-              <GlassyButton href="https://linkedin.com/in/your-handle" variant="default" size="sm">
-                LinkedIn
               </GlassyButton>
             </div>
           </motion.div>

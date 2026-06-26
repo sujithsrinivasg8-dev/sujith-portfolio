@@ -10,7 +10,6 @@ export default function Footer() {
         </div>
         <div className="flex gap-6 font-mono text-[10px] uppercase tracking-widest text-cream/30">
           <a href="https://github.com/sujithsrinivasg8-dev" target="_blank" rel="noopener noreferrer" className="hover:text-amber transition">GitHub</a>
-          <a href="https://linkedin.com/in/your-handle" target="_blank" rel="noopener noreferrer" className="hover:text-amber transition">LinkedIn</a>
           <a href="/Sujith_Srinivas_G.pdf" className="hover:text-amber transition">Résumé</a>
           <a href="mailto:sarathsai81@gmail.com" className="hover:text-amber transition">Email</a>
         </div>
