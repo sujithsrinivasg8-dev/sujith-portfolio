@@ -59,7 +59,9 @@ export default function GlassyButton({
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
       onMouseMove={handleMove}
-      whileTap={{ scale: 0.97 }}
+      whileHover={{ y: -2 }}
+      whileTap={{ scale: 0.97, y: 0 }}
+      transition={{ type: 'spring', stiffness: 400, damping: 25 }}
       className={`group relative inline-flex items-center gap-3 rounded-full border backdrop-blur-xl overflow-hidden font-mono uppercase tracking-wider ${sizes[size]}`}
       style={{
         background: v.bg,

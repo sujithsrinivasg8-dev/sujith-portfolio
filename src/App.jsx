@@ -1,8 +1,10 @@
 import { useEffect, useState } from 'react'
+import { MotionConfig } from 'framer-motion'
 import useSmoothScroll from './hooks/useSmoothScroll'
 import useHashRoute from './hooks/useHashRoute'
 import Preloader from './components/Preloader'
 import Cursor from './components/Cursor'
+import ScrollProgress from './components/ScrollProgress'
 import Navigation from './components/Navigation'
 import Hero from './components/Hero'
 import Marquee from './components/Marquee'
@@ -46,9 +48,10 @@ function App() {
   }, [])
 
   return (
-    <>
+    <MotionConfig reducedMotion="user">
       <Preloader />
       {!mobile && <Cursor />}
+      <ScrollProgress />
       <div className="grain-overlay" />
 
       <Navigation />
@@ -56,7 +59,7 @@ function App() {
       {route === 'ai' ? <AIPage /> : <HomePage />}
 
       <Footer />
-    </>
+    </MotionConfig>
   )
 }
 

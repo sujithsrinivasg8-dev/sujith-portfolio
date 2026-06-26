@@ -4,6 +4,7 @@ import { ArrowDown } from 'lucide-react'
 import TextVideoMask from './TextVideoMask'
 import GlassyButton from './GlassyButton'
 import ShowcaseCard from './ShowcaseCard'
+import CountUp from './CountUp'
 
 const PHRASES = [
   'Building event-driven systems at 15K TPS',
@@ -152,13 +153,15 @@ export default function Hero() {
           className="mt-16 flex flex-wrap gap-8 justify-center"
         >
           {[
-            { num: '6+', label: 'Years building backend systems' },
-            { num: '15K', label: 'Transactions/sec sustained' },
-            { num: '50M+', label: 'Users served (Flipkart)' },
-            { num: '99.9%', label: 'System availability' },
+            { to: 6, suffix: '+', label: 'Years building backend systems' },
+            { to: 15, suffix: 'K', label: 'Transactions/sec sustained' },
+            { to: 50, suffix: 'M+', label: 'Users served (Flipkart)' },
+            { to: 99.9, decimals: 1, suffix: '%', label: 'System availability' },
           ].map((s, i) => (
             <div key={i} className="flex-1 min-w-[140px] text-center">
-              <div className="font-display text-3xl md:text-4xl text-cream">{s.num}</div>
+              <div className="font-display text-3xl md:text-4xl text-cream tabular-nums">
+                <CountUp to={s.to} decimals={s.decimals || 0} suffix={s.suffix} />
+              </div>
               <div className="font-mono text-[10px] uppercase tracking-wider text-cream/40 mt-1">
                 {s.label}
               </div>
