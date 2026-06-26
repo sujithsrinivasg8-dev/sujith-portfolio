@@ -13,7 +13,7 @@ export default function Contact() {
       `From: ${form.name} <${form.email}>\n\n${form.message}`
     )
     const subject = encodeURIComponent(form.subject || 'Portfolio inquiry')
-    window.location.href = `mailto:sujithsrinivasg8@gmail.com?subject=${subject}&body=${body}`
+    window.location.href = `mailto:sarathsai81@gmail.com?subject=${subject}&body=${body}`
     setSent(true)
     setTimeout(() => setSent(false), 4000)
   }
@@ -73,21 +73,21 @@ export default function Contact() {
 
                 <div className="text-cream/40">$ contact --channels</div>
                 <div className="space-y-2 pl-2">
-                  <a href="mailto:sujithsrinivasg8@gmail.com" className="flex items-center gap-3 text-cream/80 hover:text-amber transition group">
+                  <a href="mailto:sarathsai81@gmail.com" className="flex items-center gap-3 text-cream/80 hover:text-amber transition group">
                     <Mail size={14} className="text-amber" />
-                    <span className="group-hover:underline">sujithsrinivasg8@gmail.com</span>
+                    <span className="group-hover:underline">sarathsai81@gmail.com</span>
                   </a>
-                  <a href="tel:5132583186" className="flex items-center gap-3 text-cream/80 hover:text-amber transition group">
+                  <a href="tel:3175230756" className="flex items-center gap-3 text-cream/80 hover:text-amber transition group">
                     <Phone size={14} className="text-amber" />
-                    <span className="group-hover:underline">(513) 258-3186</span>
+                    <span className="group-hover:underline">(317) 523-0756</span>
                   </a>
                   <div className="flex items-center gap-3 text-cream/80">
                     <MapPin size={14} className="text-amber" />
                     <span>Cincinnati, OH · United States</span>
                   </div>
-                  <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-cream/80 hover:text-amber transition group">
+                  <a href="https://github.com/sujithsrinivasg8-dev" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-cream/80 hover:text-amber transition group">
                     <Github size={14} className="text-amber" />
-                    <span className="group-hover:underline">github.com/your-username</span>
+                    <span className="group-hover:underline">github.com/sujithsrinivasg8-dev</span>
                   </a>
                   <a href="https://linkedin.com/in/your-handle" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-cream/80 hover:text-amber transition group">
                     <Linkedin size={14} className="text-amber" />
@@ -101,13 +101,13 @@ export default function Contact() {
 
             {/* Social row */}
             <div className="mt-8 flex flex-wrap gap-3">
-              <GlassyButton href="mailto:sujithsrinivasg8@gmail.com" variant="amber" size="sm">
+              <GlassyButton href="mailto:sarathsai81@gmail.com" variant="amber" size="sm">
                 Email Me
               </GlassyButton>
               <GlassyButton href="/Sujith_Srinivas_G.pdf" variant="electric" size="sm" icon={false}>
                 ↓ Download Résumé
               </GlassyButton>
-              <GlassyButton href="https://github.com/your-username" variant="default" size="sm">
+              <GlassyButton href="https://github.com/sujithsrinivasg8-dev" variant="default" size="sm">
                 GitHub
               </GlassyButton>
               <GlassyButton href="https://linkedin.com/in/your-handle" variant="default" size="sm">

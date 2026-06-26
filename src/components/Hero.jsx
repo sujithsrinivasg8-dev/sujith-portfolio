@@ -55,7 +55,7 @@ export default function Hero() {
           CINCINNATI · OH · USA
         </div>
         <div className="font-mono text-[10px] uppercase tracking-[0.3em] text-cream/30 rotate-90 origin-bottom-right">
-          (513) 258 · 3186
+          (317) 523 · 0756
         </div>
       </div>
 
