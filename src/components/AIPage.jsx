@@ -5,6 +5,7 @@ import Unfocused from './Unfocused'
 import ExpandedMask from './ExpandedMask'
 import RagPipeline from './RagPipeline'
 import FraudStream from './FraudStream'
+import CaseFiles from './CaseFiles'
 
 /**
  * AIPage — a dedicated page showcasing Sujith's AI/ML work.
@@ -238,8 +239,8 @@ export default function AIPage() {
           </p>
 
           <div className="flex flex-wrap gap-4 mt-12">
-            <GlassyButton href="#ai-demo" variant="amber" size="lg">See it run</GlassyButton>
-            <GlassyButton href="#ai-work" variant="default" size="lg">View AI projects</GlassyButton>
+            <GlassyButton href="#case-files" variant="amber" size="lg">Open the case files</GlassyButton>
+            <GlassyButton href="#ai-demo" variant="default" size="lg">See it run</GlassyButton>
           </div>
 
           {/* stat strip */}
@@ -256,6 +257,17 @@ export default function AIPage() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* FLAGSHIP CASE FILES */}
+      <section id="case-files" className="relative px-6 md:px-16 lg:px-24 py-24">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex items-center gap-3 mb-6">
+            <div className="w-8 h-px bg-amber" />
+            <span className="font-mono text-[11px] uppercase tracking-[0.3em] text-amber">00 — Flagship Builds</span>
+          </div>
+          <CaseFiles />
         </div>
       </section>
 

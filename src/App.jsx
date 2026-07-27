@@ -17,6 +17,7 @@ import Experience from './components/Experience'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import AIPage from './components/AIPage'
+import CaseStudyPage from './components/CaseStudyPage'
 
 // The existing homepage — unchanged, just wrapped in its own component.
 function HomePage() {
@@ -37,7 +38,7 @@ function HomePage() {
 
 function App() {
   const [mobile, setMobile] = useState(false)
-  const { route } = useHashRoute()
+  const { route, slug } = useHashRoute()
   useSmoothScroll()
 
   useEffect(() => {
@@ -56,7 +57,13 @@ function App() {
 
       <Navigation />
 
-      {route === 'ai' ? <AIPage /> : <HomePage />}
+      {route === 'case' ? (
+        <CaseStudyPage slug={slug} />
+      ) : route === 'ai' ? (
+        <AIPage />
+      ) : (
+        <HomePage />
+      )}
 
       <Footer />
     </MotionConfig>

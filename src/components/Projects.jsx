@@ -1,5 +1,6 @@
 import ExpandedMask from './ExpandedMask'
 import ReelCarousel from './ReelCarousel'
+import CaseFiles from './CaseFiles'
 
 /**
  * Industry-standard project cards based on Sujith's actual experience.
@@ -316,6 +317,17 @@ export default function Projects() {
             engagements across fintech, e-commerce, and platform work.
           </p>
         </div>
+      </div>
+
+      {/* Flagship AI case files */}
+      <div className="max-w-7xl mx-auto mb-24">
+        <div className="flex items-center gap-3 mb-10">
+          <div className="w-8 h-px bg-electric" />
+          <span className="font-mono text-[11px] uppercase tracking-[0.3em] text-electric">
+            Featured — AI Case Files
+          </span>
+        </div>
+        <CaseFiles heading={false} />
       </div>
 
       {/* Project Reel Carousel */}
