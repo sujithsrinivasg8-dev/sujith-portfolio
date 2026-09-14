@@ -27,8 +27,8 @@ export default function Navigation() {
   useEffect(() => {
     const updateTime = () => {
       const d = new Date()
-      const utc = d.toLocaleTimeString('en-US', { timeZone: 'America/New_York', hour: '2-digit', minute: '2-digit', hour12: false })
-      setTime(utc + ' EST')
+      const utc = d.toLocaleTimeString('en-US', { timeZone: 'America/Los_Angeles', hour: '2-digit', minute: '2-digit', hour12: false })
+      setTime(utc + ' PST')
     }
     updateTime()
     const t = setInterval(updateTime, 60000)

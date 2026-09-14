@@ -14,12 +14,12 @@ export default function Journey() {
         </div>
         <div className="grid md:grid-cols-2 gap-12 items-end">
           <h2 className="font-display text-5xl md:text-7xl text-cream leading-tight">
-            From Bapatla to <em className="text-amber">Cincinnati.</em>
+            From Bapatla to <em className="text-amber">California.</em>
           </h2>
           <p className="text-cream/60 text-base leading-relaxed max-w-md">
             Engineering campuses in coastal India to financial systems in the
-            US Midwest — every move sharpened how I think about scale,
-            reliability, and what production really demands.
+            US, now based in San Jose — every move sharpened how I think about
+            scale, reliability, and what production really demands.
           </p>
         </div>
       </div>
@@ -35,7 +35,7 @@ export default function Journey() {
       <div className="max-w-7xl mx-auto mt-20 grid grid-cols-2 md:grid-cols-4 gap-8">
         {[
           { num: '2', label: 'Continents', sub: 'India → USA' },
-          { num: '4', label: 'Cities lived', sub: 'BPT · BLR · HYD · CIN' },
+          { num: '5', label: 'Cities lived', sub: 'BPT · BLR · HYD · CIN · SJ' },
           { num: '3', label: 'Companies', sub: 'Flipkart · Insight · PNC' },
           { num: '∞', label: 'Lessons', sub: 'Still learning' },
         ].map((s, i) => (

@@ -11,7 +11,7 @@ import CountUp from './CountUp'
 const NAME_GRADIENT = 'linear-gradient(110deg, #FF6B1A 0%, #F5F1EA 48%, #00FFB2 100%)'
 
 const PHRASES = [
-  'Building event-driven systems at 15K TPS',
+  'Building event-driven systems at 22K+ TPS',
   'AI-powered fraud detection · RAG · LLMs',
   'Spring Boot · Kafka · AWS · Kubernetes',
   '6 years across banking, retail & e-commerce',
@@ -57,7 +57,7 @@ export default function Hero() {
       </div>
       <div className="absolute right-12 top-0 bottom-0 hidden md:flex flex-col justify-between py-32 items-end z-10 pointer-events-none">
         <div className="font-mono text-[10px] uppercase tracking-[0.3em] text-cream/30 rotate-90 origin-top-right translate-y-32">
-          CINCINNATI · OH · USA
+          SAN JOSE · CA · USA
         </div>
         <div className="font-mono text-[10px] uppercase tracking-[0.3em] text-cream/30 rotate-90 origin-bottom-right">
           (317) 523 · 0756
@@ -98,7 +98,7 @@ export default function Hero() {
             {/* Value proposition */}
             <p className="mt-6 text-cream/70 text-base md:text-lg leading-relaxed max-w-md mx-auto md:mx-0">
               I build <span className="text-cream">high-throughput, low-latency</span> backend
-              platforms — <span className="text-amber">15K transactions/sec</span> at
+              platforms — <span className="text-amber">22K+ transactions/sec</span> at
               <span className="text-electric"> sub-100ms</span>.
             </p>
           </div>
@@ -141,7 +141,7 @@ export default function Hero() {
           <GlassyButton href="#contact" variant="default" size="lg">
             Let&apos;s Talk &#8593;
           </GlassyButton>
-          <GlassyButton href="/Sujith_Srinivas_G.pdf" variant="electric" size="lg" download>
+          <GlassyButton href="Sujith_Srinivas_Grandhe.pdf" variant="electric" size="lg" download>
             R&eacute;sum&eacute; &#8595;
           </GlassyButton>
         </motion.div>
@@ -155,9 +155,9 @@ export default function Hero() {
         >
           {[
             { to: 6, suffix: '+', label: 'Years building backend systems' },
-            { to: 15, suffix: 'K', label: 'Transactions/sec sustained' },
+            { to: 22, suffix: 'K+', label: 'Transactions/sec sustained' },
             { to: 50, suffix: 'M+', label: 'Users served (Flipkart)' },
-            { to: 99.9, decimals: 1, suffix: '%', label: 'System availability' },
+            { to: 99.99, decimals: 2, suffix: '%', label: 'System availability' },
           ].map((s, i) => (
             <div key={i} className="flex-1 min-w-[140px] text-center">
               <div className="font-display text-3xl md:text-4xl text-cream tabular-nums">

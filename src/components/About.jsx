@@ -25,10 +25,10 @@ export default function About() {
         <ShowcaseCard
           eyebrow="// Profile · 2025"
           title="6 years building scale."
-          description="Software Engineer with deep expertise in scalable microservices, event-driven architectures, and AI-powered systems. I've designed pipelines processing 15K+ transactions/sec at PNC Bank, served 50M+ users at Flipkart, and shipped RAG-based fraud detection in production."
+          description="Software Engineer with deep expertise in scalable microservices, event-driven architectures, and AI-powered systems. I've designed pipelines processing 22K+ transactions/sec at PNC Bank, served 50M+ users at Flipkart, and shipped RAG-based fraud detection in production."
           meta={
             <>
-              <span>📍 Cincinnati, OH</span>
+              <span>📍 San Jose, CA</span>
               <span>·</span>
               <span>🎓 MS Business Analytics</span>
               <span>·</span>
@@ -77,7 +77,7 @@ export default function About() {
                 <div className="space-y-5">
                   <div>
                     <div className="font-display text-3xl text-cream">Throughput obsession.</div>
-                    <p className="text-sm text-cream/60 mt-1">15K TPS · sub-100ms latency · 99.9% uptime</p>
+                    <p className="text-sm text-cream/60 mt-1">22K+ TPS · sub-100ms latency · 99.99% uptime</p>
                   </div>
                   <div>
                     <div className="font-display text-3xl text-amber">Event-driven thinking.</div>

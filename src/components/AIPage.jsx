@@ -38,7 +38,7 @@ const CAPABILITIES = [
   {
     no: '05', title: 'Production AI Ops', accent: '#00FFB2',
     tag: 'Observability for ML',
-    points: ['Latency + drift monitoring via Prometheus/Grafana', 'Distributed tracing across the inference path', '99.9% availability under peak traffic'],
+    points: ['Latency + drift monitoring via Prometheus/Grafana', 'Distributed tracing across the inference path', '99.99% availability under peak traffic'],
   },
   {
     no: '06', title: 'Explainability', accent: '#7C5CFC',
@@ -88,7 +88,7 @@ const AI_PROJECTS = [
     thumbBg: 'linear-gradient(135deg, #FF6B1A 0%, #2a0a00 100%)',
     summary: 'Production fraud-detection engine analyzing millions of transactions daily, combining a fast scikit-learn classifier with a RAG-based LLM reasoning layer for explainable verdicts.',
     stack: ['Python', 'scikit-learn', 'RAG', 'LangChain', 'LLMs', 'Kafka', 'DynamoDB'],
-    metrics: [{ v: '−40%', l: 'detection latency' }, { v: 'Millions', l: 'txns/day analyzed' }, { v: '< 150ms', l: 'decision p95' }, { v: '99.9%', l: 'availability' }],
+    metrics: [{ v: '−40%', l: 'detection latency' }, { v: 'Millions', l: 'txns/day analyzed' }, { v: '< 150ms', l: 'decision p95' }, { v: '99.99%', l: 'availability' }],
     problem: 'PNC needed sub-second fraud decisioning at scale, without false-positive spikes, and every automated rejection had to be explainable to compliance.',
     approach: [
       'Fast scikit-learn classifier scores every transaction in real time against behavioral baselines',
@@ -101,7 +101,7 @@ const AI_PROJECTS = [
       'Reduced fraud detection latency by 40%',
       'Improved anomaly detection accuracy on hard edge cases by fusing ML + LLM reasoning',
       'Delivered audit-grade explainability for every automated decision',
-      'Sustained 99.9% availability through peak transaction surges',
+      'Sustained 99.99% availability through peak transaction surges',
     ],
   },
   {
@@ -249,7 +249,7 @@ export default function AIPage() {
               { num: 'Millions', label: 'Transactions analyzed daily' },
               { num: '−40%', label: 'Fraud detection latency' },
               { num: 'RAG', label: 'LLM reasoning in production' },
-              { num: '99.9%', label: 'Inference availability' },
+              { num: '99.99%', label: 'Inference availability' },
             ].map((s, i) => (
               <div key={i}>
                 <div className="font-display text-3xl md:text-4xl text-cream">{s.num}</div>

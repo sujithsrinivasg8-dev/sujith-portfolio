@@ -10,19 +10,19 @@ import CaseFiles from './CaseFiles'
 const PROJECTS = [
   {
     badge: 'FINTECH · PNC BANK · 2026',
-    title: 'Real-time fraud detection at 15K TPS.',
+    title: 'Real-time fraud detection at 22K TPS.',
     thumbBg: 'linear-gradient(135deg, #FF6B1A 0%, #2a0a00 100%)',
     summary:
       'AI-powered fraud detection engine analyzing millions of financial transactions daily using RAG-based LLM workflows and ML classification — cut detection latency 40%.',
     stack: ['Python', 'scikit-learn', 'RAG', 'LangChain', 'Kafka', 'AWS Lambda', 'Spring Boot'],
     metrics: [
-      { v: '15K+', l: 'TPS sustained' },
+      { v: '22K+', l: 'TPS sustained' },
       { v: '< 100ms', l: 'detection p95' },
       { v: '−40%', l: 'latency reduction' },
-      { v: '99.9%', l: 'availability SLA' },
+      { v: '99.99%', l: 'availability SLA' },
     ],
     problem:
-      'PNC needed sub-second fraud decisioning across 15K+ live transactions/sec without false-positive spikes, on a stack that could justify each rejection to compliance.',
+      'PNC needed sub-second fraud decisioning across 22K+ live transactions/sec without false-positive spikes, on a stack that could justify each rejection to compliance.',
     approach: [
       'Designed event-driven Kafka pipeline ingesting transaction events from multiple core systems',
       'Layered ML classifier (scikit-learn) for fast anomaly scoring + RAG-based LLM layer for contextual reasoning on edge cases',
@@ -32,7 +32,7 @@ const PROJECTS = [
     impact: [
       'Reduced fraud detection latency by 40% (from ~250ms → ~150ms p95)',
       'Improved anomaly recall on edge cases by combining ML + LLM reasoning',
-      'Maintained 99.9% availability under peak transaction surges',
+      'Maintained 99.99% availability under peak transaction surges',
       'Provided audit-grade explainability for every rejection',
     ],
   },
@@ -160,7 +160,7 @@ const PROJECTS = [
     stack: ['Prometheus', 'Grafana', 'ELK Stack', 'New Relic', 'AWS X-Ray', 'OpenTelemetry'],
     metrics: [
       { v: '−30%', l: 'MTTR' },
-      { v: '99.9%', l: 'uptime SLA' },
+      { v: '99.99%', l: 'uptime SLA' },
       { v: '15+', l: 'services traced' },
       { v: '100%', l: 'request coverage' },
     ],

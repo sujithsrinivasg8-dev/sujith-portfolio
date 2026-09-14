@@ -65,9 +65,9 @@ export default function Contact() {
                 <div className="text-cream/40">$ cat status.json</div>
                 <div className="pl-2 text-cream/80 mb-4">
                   <div><span className="text-amber">"available"</span>: <span className="text-electric">true</span>,</div>
-                  <div><span className="text-amber">"location"</span>: <span className="text-cream">"Cincinnati, OH, USA"</span>,</div>
+                  <div><span className="text-amber">"location"</span>: <span className="text-cream">"San Jose, CA, USA"</span>,</div>
                   <div><span className="text-amber">"open_to"</span>: [<span className="text-cream">"remote"</span>, <span className="text-cream">"hybrid"</span>, <span className="text-cream">"relocate"</span>],</div>
-                  <div><span className="text-amber">"timezone"</span>: <span className="text-cream">"EST (UTC-5)"</span>,</div>
+                  <div><span className="text-amber">"timezone"</span>: <span className="text-cream">"PST (UTC-8)"</span>,</div>
                   <div><span className="text-amber">"response_time"</span>: <span className="text-cream">"&lt; 24 hours"</span></div>
                 </div>
 
@@ -83,7 +83,7 @@ export default function Contact() {
                   </a>
                   <div className="flex items-center gap-3 text-cream/80">
                     <MapPin size={14} className="text-amber" />
-                    <span>Cincinnati, OH · United States</span>
+                    <span>San Jose, CA · United States</span>
                   </div>
                   <a href="https://github.com/sujithsrinivasg8-dev" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-cream/80 hover:text-amber transition group">
                     <Github size={14} className="text-amber" />
@@ -100,7 +100,7 @@ export default function Contact() {
               <GlassyButton href="mailto:sujithsrinivasg8@gmail.com" variant="amber" size="sm">
                 Email Me
               </GlassyButton>
-              <GlassyButton href="/Sujith_Srinivas_G.pdf" variant="electric" size="sm" icon={false}>
+              <GlassyButton href="Sujith_Srinivas_Grandhe.pdf" variant="electric" size="sm" icon={false}>
                 ↓ Download Résumé
               </GlassyButton>
               <GlassyButton href="https://github.com/sujithsrinivasg8-dev" variant="default" size="sm">

@@ -2,7 +2,8 @@ import { useState, useRef, useEffect, useCallback } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 
 const LOCATIONS = [
-  { id: 'cin', name: 'Cincinnati, OH', sub: 'Currently · USA', lat: 39.1, lng: -84.5, x: 22, y: 37, current: true },
+  { id: 'sjc', name: 'San Jose, CA', sub: 'Currently · USA', lat: 37.3, lng: -121.9, x: 10.5, y: 33, current: true },
+  { id: 'cin', name: 'Cincinnati, OH', sub: 'MS · Univ of Cincinnati', lat: 39.1, lng: -84.5, x: 22, y: 37, current: false },
   { id: 'pgh', name: 'Pittsburgh, PA', sub: 'PNC Bank HQ', lat: 40.4, lng: -79.9, x: 24.5, y: 35, current: false },
   { id: 'blr', name: 'Bangalore, India', sub: 'Flipkart · 2019–21', lat: 12.97, lng: 77.59, x: 68, y: 56, current: false },
   { id: 'hyd', name: 'Hyderabad, India', sub: 'Insight Global · 2021–24', lat: 17.4, lng: 78.5, x: 69.5, y: 52, current: false },
@@ -14,6 +15,7 @@ const CONNECTIONS = [
     ['blr', 'hyd'],
     ['hyd', 'cin'],
     ['cin', 'pgh'],
+    ['cin', 'sjc'],
   ]
 
 const CONTINENTS = {
@@ -84,7 +86,7 @@ function getPointOnBezier(ax, ay, cx, cy, bx, by, t) {
 }
 
 export default function FFMap3D() {
-    const [activeId, setActiveId] = useState('cin')
+    const [activeId, setActiveId] = useState('sjc')
         const [hoverId, setHoverId] = useState(null)
             const [radarAngle, setRadarAngle] = useState(0)
                 const [scanY, setScanY] = useState(0)
